@@ -74,7 +74,7 @@ function updateTimer() {
         clearInterval(flipInterval);
         timerElement.textContent = ``;
         $("#stats").append(`
-        <h1">You Win!</h1>
+        <h1>You Win!</h1>
         <br>
         `);
     } else {

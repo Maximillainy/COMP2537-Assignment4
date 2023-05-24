@@ -66,7 +66,7 @@ function updateTimer() {
         clearInterval(flipInterval);
         timerElement.textContent = ``;
         $("#stats").append(`
-        <h1">Game over!</h1>
+        <h1>Game over!</h1>
         <br>
         `);
     } else if (pairsLeft == 0) {

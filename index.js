@@ -66,13 +66,17 @@ function updateTimer() {
         clearInterval(flipInterval);
         timerElement.textContent = ``;
         $("#stats").append(`
-        <h1 style="color:red;">Game over!</h1>
+        <h1">Game over!</h1>
         <br>
         `);
     } else if (pairsLeft == 0) {
         clearInterval(timerInterval);
         clearInterval(flipInterval);
-        alert("You win!");
+        timerElement.textContent = ``;
+        $("#stats").append(`
+        <h1">You Win!</h1>
+        <br>
+        `);
     } else {
         clicksElement.textContent = `Total Clicks: ${totalClicks}`;
         tpairElement.textContent = `Total Pairs: ${pairCount}`;
